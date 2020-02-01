@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+    <h2>JavaScript Popup Chat Window</h2>
+    <p>Created by <a href="https://www.dineshk.me/">Dinesh Kumar</a></p>
+    <img src="img/chat.png" class="chatimg">
+    <p>Click on the chat icon at the bottom of this page to open the chat window.</p>
+    <button class="open-button" onclick="openChatBox()">
+        <img src="img/chat-icon.svg">
+    </button>
+    <div class="chat-popup" id="chat-box">
+        <div class="chat-header">
+            <h3>Live Chat</h3>
+            <p>Happy to support you</p>
+        </div>
+        <form class="form-container">
+            <textarea placeholder="Type message.." required></textarea>
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeChatBox()">Close</button>
+        </form>
+    </div>
+</body>
+
+</html>
